@@ -1,0 +1,23 @@
+<html>
+  <div id="app">
+    <input type="text" v-model="msg">
+    <p>{{ msg }}</p>
+    {{msg}}
+  </div>
+</html>
+
+<script src="../index.js"></script>
+<script>
+
+  var vm = new MV({
+    el: '#app',
+    data: {
+      msg: 'hello'
+    }
+  });
+  for (var i= 0; i< 100; i++) {
+    vm.msg = i
+  }
+  
+
+</script>
